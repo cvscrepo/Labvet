@@ -1,0 +1,17 @@
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Utility.deps.json
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Utility.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Utility.pdb
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.AssemblyInfo.cs
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\refint\GestionLab.Utility.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.pdb
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\ref\GestionLab.Utility.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\bin\Debug\net7.0\GestionLab.DTO.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Model.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\bin\Debug\net7.0\GestionLab.DTO.pdb
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Model.pdb
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.csproj.CopyComplete

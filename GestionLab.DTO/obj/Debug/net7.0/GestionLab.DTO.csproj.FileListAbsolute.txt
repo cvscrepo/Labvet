@@ -1,0 +1,11 @@
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\bin\Debug\net7.0\GestionLab.DTO.deps.json
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\bin\Debug\net7.0\GestionLab.DTO.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\bin\Debug\net7.0\GestionLab.DTO.pdb
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.AssemblyInfo.cs
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\obj\Debug\net7.0\refint\GestionLab.DTO.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.pdb
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DTO\obj\Debug\net7.0\ref\GestionLab.DTO.dll

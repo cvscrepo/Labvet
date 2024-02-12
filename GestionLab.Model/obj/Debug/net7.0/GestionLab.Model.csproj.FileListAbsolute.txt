@@ -1,0 +1,14 @@
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\bin\Debug\net7.0\GestionLab.Model.deps.json
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\bin\Debug\net7.0\GestionLab.Model.runtimeconfig.json
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\bin\Debug\net7.0\GestionLab.Model.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\bin\Debug\net7.0\GestionLab.Model.pdb
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.AssemblyInfo.cs
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\refint\GestionLab.Model.dll
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.pdb
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.genruntimeconfig.cache
+C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\obj\Debug\net7.0\ref\GestionLab.Model.dll
