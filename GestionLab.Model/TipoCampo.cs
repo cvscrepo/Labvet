@@ -9,5 +9,9 @@ public partial class TipoCampo
 
     public string? Nombre { get; set; }
 
-    public virtual ICollection<Campo> Campos { get; } = new List<Campo>();
+    public string? TipoCampo1 { get; set; }
+
+    public string? ValorReferencia { get; set; }
+
+    public virtual ICollection<CampoFormato> CampoFormatos { get; } = new List<CampoFormato>();
 }

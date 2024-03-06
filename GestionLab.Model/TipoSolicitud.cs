@@ -9,5 +9,9 @@ public partial class TipoSolicitud
 
     public string? Nombre { get; set; }
 
+    public DateTime? CreatedAt { get; set; }
+
+    public DateTime? UpdatedAt { get; set; }
+
     public virtual ICollection<Solicitud> Solicituds { get; } = new List<Solicitud>();
 }

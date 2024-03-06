@@ -7,23 +7,29 @@ public partial class Solicitud
 {
     public int IdSolicitud { get; set; }
 
-    public int? IdUsuario { get; set; }
+    public int CreatedBy { get; set; }
 
-    public int? IdTipo { get; set; }
+    public int IdTipoSolicitud { get; set; }
 
-    public int? IdFormato { get; set; }
+    public int IdCliente { get; set; }
 
-    public string? Nombre { get; set; }
+    public int IdPaciente { get; set; }
 
-    public bool? Estado { get; set; }
+    public string Nombre { get; set; } = null!;
+
+    public bool Estado { get; set; }
 
     public DateTime? CreatedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }
 
-    public virtual Formato? IdFormatoNavigation { get; set; }
+    public virtual Usuario CreatedByNavigation { get; set; } = null!;
 
-    public virtual TipoSolicitud? IdTipoNavigation { get; set; }
+    public virtual ICollection<Formato> Formatos { get; } = new List<Formato>();
 
-    public virtual Usuario? IdUsuarioNavigation { get; set; }
+    public virtual Cliente IdClienteNavigation { get; set; } = null!;
+
+    public virtual Paciente IdPacienteNavigation { get; set; } = null!;
+
+    public virtual TipoSolicitud IdTipoSolicitudNavigation { get; set; } = null!;
 }

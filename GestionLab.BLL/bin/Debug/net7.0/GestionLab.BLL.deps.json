@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "GestionLab.BLL/1.0.0": {
+        "dependencies": {
+          "GestionLab.DAL": "1.0.0",
+          "GestionLab.DTO": "1.0.0",
+          "GestionLab.Utility": "1.0.0"
+        },
+        "runtime": {
+          "GestionLab.BLL.dll": {}
+        }
+      },
+      "GestionLab.DAL/1.0.0": {
+        "runtime": {
+          "GestionLab.DAL.dll": {}
+        }
+      },
+      "GestionLab.DTO/1.0.0": {
+        "runtime": {
+          "GestionLab.DTO.dll": {}
+        }
+      },
+      "GestionLab.Utility/1.0.0": {
+        "dependencies": {
+          "GestionLab.DTO": "1.0.0"
+        },
+        "runtime": {
+          "GestionLab.Utility.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GestionLab.BLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestionLab.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestionLab.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestionLab.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

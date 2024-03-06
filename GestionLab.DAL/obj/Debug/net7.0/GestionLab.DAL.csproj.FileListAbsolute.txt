@@ -13,3 +13,14 @@ C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\Gestion
 C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DAL\bin\Debug\net7.0\GestionLab.Model.pdb
 C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DAL\obj\Debug\net7.0\GestionLab.DAL.csproj.AssemblyReference.cache
 C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.DAL\obj\Debug\net7.0\GestionLab.DAL.csproj.CopyComplete
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\bin\Debug\net7.0\GestionLab.DAL.deps.json
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\bin\Debug\net7.0\GestionLab.DAL.dll
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\bin\Debug\net7.0\GestionLab.DAL.pdb
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\obj\Debug\net7.0\GestionLab.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\obj\Debug\net7.0\GestionLab.DAL.AssemblyInfoInputs.cache
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\obj\Debug\net7.0\GestionLab.DAL.AssemblyInfo.cs
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\obj\Debug\net7.0\GestionLab.DAL.csproj.CoreCompileInputs.cache
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\obj\Debug\net7.0\GestionLab.DAL.dll
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\obj\Debug\net7.0\refint\GestionLab.DAL.dll
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\obj\Debug\net7.0\GestionLab.DAL.pdb
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.DAL\obj\Debug\net7.0\ref\GestionLab.DAL.dll

@@ -15,3 +15,18 @@ C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\Gestion
 C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Model.pdb
 C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.csproj.AssemblyReference.cache
 C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.csproj.CopyComplete
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Utility.deps.json
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Utility.dll
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\bin\Debug\net7.0\GestionLab.Utility.pdb
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\bin\Debug\net7.0\GestionLab.DTO.dll
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\bin\Debug\net7.0\GestionLab.DTO.pdb
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.csproj.AssemblyReference.cache
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.AssemblyInfoInputs.cache
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.AssemblyInfo.cs
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.csproj.CoreCompileInputs.cache
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.csproj.CopyComplete
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.dll
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\refint\GestionLab.Utility.dll
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\GestionLab.Utility.pdb
+C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Utility\obj\Debug\net7.0\ref\GestionLab.Utility.dll

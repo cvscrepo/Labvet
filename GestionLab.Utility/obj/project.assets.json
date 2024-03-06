@@ -3213,23 +3213,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Documents\\Proyectos programación\\Proyecto LabVet\\GestionLab\\GestionLab.Utility\\GestionLab.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.Utility\\GestionLab.Utility.csproj",
       "projectName": "GestionLab.Utility",
-      "projectPath": "C:\\Users\\PC\\Documents\\Proyectos programación\\Proyecto LabVet\\GestionLab\\GestionLab.Utility\\GestionLab.Utility.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Documents\\Proyectos programación\\Proyecto LabVet\\GestionLab\\GestionLab.Utility\\obj\\",
+      "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.Utility\\GestionLab.Utility.csproj",
+      "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JuanDavidDiazOrozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3245,11 +3245,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Documents\\Proyectos programación\\Proyecto LabVet\\GestionLab\\GestionLab.DTO\\GestionLab.DTO.csproj": {
-              "projectPath": "C:\\Users\\PC\\Documents\\Proyectos programación\\Proyecto LabVet\\GestionLab\\GestionLab.DTO\\GestionLab.DTO.csproj"
+            "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.DTO\\GestionLab.DTO.csproj": {
+              "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.DTO\\GestionLab.DTO.csproj"
             },
-            "C:\\Users\\PC\\Documents\\Proyectos programación\\Proyecto LabVet\\GestionLab\\GestionLab.Model\\GestionLab.Model.csproj": {
-              "projectPath": "C:\\Users\\PC\\Documents\\Proyectos programación\\Proyecto LabVet\\GestionLab\\GestionLab.Model\\GestionLab.Model.csproj"
+            "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj": {
+              "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj"
             }
           }
         }
@@ -3279,7 +3279,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

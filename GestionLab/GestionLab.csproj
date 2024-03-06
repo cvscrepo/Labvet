@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GestionLab.DLL\GestionLab.DLL.csproj" />
+    <ProjectReference Include="..\GestionLab.BLL\GestionLab.BLL.csproj" />
     <ProjectReference Include="..\GestionLab.DTO\GestionLab.DTO.csproj" />
     <ProjectReference Include="..\GestionLab.IOC\GestionLab.IOC.csproj" />
   </ItemGroup>

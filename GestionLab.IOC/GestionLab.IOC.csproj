@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GestionLab.BLL\GestionLab.BLL.csproj" />
     <ProjectReference Include="..\GestionLab.DAL\GestionLab.DAL.csproj" />
-    <ProjectReference Include="..\GestionLab.DLL\GestionLab.DLL.csproj" />
     <ProjectReference Include="..\GestionLab.Utility\GestionLab.Utility.csproj" />
   </ItemGroup>
 

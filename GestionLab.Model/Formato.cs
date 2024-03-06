@@ -9,15 +9,21 @@ public partial class Formato
 
     public int? IdUsuario { get; set; }
 
+    public int? IdTipoFormato { get; set; }
+
+    public int? IdSolicitud { get; set; }
+
     public string? Nombre { get; set; }
 
     public DateTime? CreatedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }
 
-    public virtual ICollection<Campo> Campos { get; } = new List<Campo>();
+    public virtual ICollection<CampoFormato> CampoFormatos { get; } = new List<CampoFormato>();
+
+    public virtual Solicitud? IdSolicitudNavigation { get; set; }
+
+    public virtual TipoFormato? IdTipoFormatoNavigation { get; set; }
 
     public virtual Usuario? IdUsuarioNavigation { get; set; }
-
-    public virtual ICollection<Solicitud> Solicituds { get; } = new List<Solicitud>();
 }

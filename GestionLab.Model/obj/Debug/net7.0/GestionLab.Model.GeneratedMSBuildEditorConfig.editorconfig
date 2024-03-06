@@ -8,6 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GestionLab.Model
-build_property.ProjectDir = C:\Users\PC\Documents\Proyectos programación\Proyecto LabVet\GestionLab\GestionLab.Model\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\JuanDavidDiazOrozco\Documents\GestionLab\Labvet\GestionLab.Model\
