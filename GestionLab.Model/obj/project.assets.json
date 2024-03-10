@@ -3456,6 +3456,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.1"
     ]
@@ -3467,11 +3468,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj",
+      "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj",
       "projectName": "GestionLab.Model",
-      "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj",
+      "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj",
       "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\GestionLab\\Labvet\\GestionLab.Model\\obj\\",
+      "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3505,6 +3506,12 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[7.0.1, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[7.0.1, )"
@@ -3532,7 +3539,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

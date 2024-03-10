@@ -9,7 +9,7 @@ public partial class TipoCampo
 
     public string? Nombre { get; set; }
 
-    public string? TipoCampo1 { get; set; }
+    public string? tipoCampo { get; set; }
 
     public string? ValorReferencia { get; set; }
 

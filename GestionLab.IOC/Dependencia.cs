@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using GestionLab.DAL.DBContext;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -12,7 +14,9 @@ namespace GestionLab.IOC
     {
         public static void InyectarDependencias(this IServiceCollection service, IConfiguration configuration )
         {
-
+            service.AddDbContext<GestionlabContext>(opt =>
+                opt.UseSqlServer(configuration.GetConnectionString("cadenaSQL"))
+            );
         }
     }
 }

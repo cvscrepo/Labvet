@@ -40,7 +40,18 @@ public partial class GestionlabContext : DbContext
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) { }
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
+    {
+        /*if (!optionsBuilder.IsConfigured)
+        {
+
+            optionsBuilder.UseSqlServer(
+                "Server=(local); DataBase=GESTIONLAB; Trusted_Connection=True; TrustServerCertificate=True;",
+                options => options.MigrationsAssembly("GestionLab.DAL")
+                
+                ) ;
+        }*/
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -283,7 +294,7 @@ public partial class GestionlabContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("nombre");
-            entity.Property(e => e.TipoCampo1)
+            entity.Property(e => e.tipoCampo)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("tipoCampo");
