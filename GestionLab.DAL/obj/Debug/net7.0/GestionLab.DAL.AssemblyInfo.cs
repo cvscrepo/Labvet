@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionLab.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13b26fa27355b6677403c57c83730c073b678c73")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fdce6b721ec4545626f629d336767bfd1d8fc7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionLab.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionLab.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

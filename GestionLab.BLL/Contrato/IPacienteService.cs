@@ -13,7 +13,7 @@ namespace GestionLab.BLL.Contrato
 
         public Task<PacienteDTO> ListarPaciente(int idPaciente);
 
-        public Task<PacienteDTO> CrearPaciente(PacienteDTO formato);
+        public Task<PacienteDTO> CrearPaciente(PacienteDTO paciente);
 
         public Task<bool> EditarPaciente(PacienteDTO paciente);
 
