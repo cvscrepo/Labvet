@@ -38,4 +38,6 @@ public partial class Usuario
     public virtual TipoIdentificacion IdTipoIdentificacionNavigation { get; set; } = null!;
 
     public virtual ICollection<Solicitud> Solicituds { get; } = new List<Solicitud>();
+
+    public virtual ICollection<Veterinario> Veterinarios { get; } = new List<Veterinario>();
 }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "x9WacWX1A8ntiiHy/nJQw71PbZYJpnTffU6ngT1Qs7rb6OTTQPPM0Daz9S3l+u9id6JYFFULPUd4A51Ul6QnzA==",
+  "dgSpecHash": "UwFB2y8H0zhVtn5Hsjoq5Ufyz4Nxq3jJDvw0q+WJKn5rO+bGpCi2ai4FurMNimE9BXEospdzBI5sbN+VhbBPYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.DTO\\GestionLab.DTO.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

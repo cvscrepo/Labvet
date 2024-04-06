@@ -25,5 +25,28 @@ namespace GestionLab.DTO
         public DateTime? CreatedAt { get; set; }
 
         public DateTime? UpdatedAt { get; set; }
+
+        public int? IdVeterinario { get; set; }
+
+        public string? TamanoFragmento { get; set; }
+
+        public int? TipoMuestra { get; set; }
+
+        public int? TipoExamen { get; set; }
+
+        public DateTime? FechaRecoleccion { get; set; }
+
+        public string? HoraRecoleccion { get; set; }
+
+        public string? Obserevaciones { get; set; }
+
+        public string? UrlFotoMuestra { get; set; }
+
+        public virtual UsuarioDTO CreatedByNavigation { get; set; } = null!;
+
+        public virtual ClienteDTO IdClienteNavigation { get; set; } = null!;
+
+        public virtual PacienteDTO IdPacienteNavigation { get; set; } = null!;
+
     }
 }

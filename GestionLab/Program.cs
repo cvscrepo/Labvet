@@ -18,14 +18,19 @@ builder.Services.InyectarDependencias(builder.Configuration);
 
 var app = builder.Build();
 
-
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+using (var scope = app.Services.CreateScope())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    GestionlabContext context = scope.ServiceProvider.GetService<GestionlabContext>();
+    context.Database.Migrate();
 }
+
+
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
 
 app.UseHttpsRedirection();
 

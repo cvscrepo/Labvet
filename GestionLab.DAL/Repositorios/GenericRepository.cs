@@ -1,7 +1,7 @@
 ﻿using GestionLab.DAL.DBContext;
 using GestionLab.DAL.Repositorios.Contratos;
 using Microsoft.EntityFrameworkCore;
-using SistemaComercial.DAL.Repositorios.Contratos;
+using GestionLab.DAL.Repositorios.Contratos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

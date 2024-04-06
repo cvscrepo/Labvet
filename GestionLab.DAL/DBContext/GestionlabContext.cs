@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
 using GestionLab.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace GestionLab.DAL.DBContext;
 
@@ -24,6 +24,8 @@ public partial class GestionlabContext : DbContext
 
     public virtual DbSet<Paciente> Pacientes { get; set; }
 
+    public virtual DbSet<Raza> Razas { get; set; }
+
     public virtual DbSet<Rol> Rols { get; set; }
 
     public virtual DbSet<Solicitud> Solicituds { get; set; }
@@ -36,22 +38,27 @@ public partial class GestionlabContext : DbContext
 
     public virtual DbSet<TipoIdentificacion> TipoIdentificacions { get; set; }
 
+    public virtual DbSet<TipoMuestra> TipoMuestras { get; set; }
+
     public virtual DbSet<TipoSolicitud> TipoSolicituds { get; set; }
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
-    {
-        /*if (!optionsBuilder.IsConfigured)
-        {
+    public virtual DbSet<Veterinario> Veterinarios { get; set; }
 
-            optionsBuilder.UseSqlServer(
-                "Server=(local); DataBase=GESTIONLAB; Trusted_Connection=True; TrustServerCertificate=True;",
-                options => options.MigrationsAssembly("GestionLab.DAL")
-                
-                ) ;
-        }*/
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        //if (!optionsBuilder.IsConfigured)
+        //{
+
+        //    optionsBuilder.UseSqlServer(
+        //        "Server=(local); DataBase=GESTIONLAB; Trusted_Connection=True; TrustServerCertificate=True;",
+        //        options => options.MigrationsAssembly("GestionLab.DAL")
+
+        //        );
+        //}
     }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -60,6 +67,10 @@ public partial class GestionlabContext : DbContext
             entity.HasKey(e => e.IdCampo).HasName("PK__CampoFor__5245D63C288E6FA6");
 
             entity.ToTable("CampoFormato");
+
+            entity.HasIndex(e => e.IdFormato, "IX_CampoFormato_idFormato");
+
+            entity.HasIndex(e => e.IdTipoCampo, "IX_CampoFormato_idTipoCampo");
 
             entity.Property(e => e.IdCampo).HasColumnName("idCampo");
             entity.Property(e => e.CreatedAt)
@@ -131,6 +142,12 @@ public partial class GestionlabContext : DbContext
 
             entity.ToTable("Formato");
 
+            entity.HasIndex(e => e.IdSolicitud, "IX_Formato_idSolicitud");
+
+            entity.HasIndex(e => e.IdTipoFormato, "IX_Formato_idTipoFormato");
+
+            entity.HasIndex(e => e.IdUsuario, "IX_Formato_idUsuario");
+
             entity.Property(e => e.IdFormato).HasColumnName("idFormato");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -166,6 +183,8 @@ public partial class GestionlabContext : DbContext
 
             entity.ToTable("Paciente");
 
+            entity.HasIndex(e => e.IdCliente, "IX_Paciente_idCliente");
+
             entity.Property(e => e.IdPaciente).HasColumnName("idPaciente");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -189,6 +208,19 @@ public partial class GestionlabContext : DbContext
                 .HasConstraintName("FK__Paciente__idClie__48CFD27E");
         });
 
+        modelBuilder.Entity<Raza>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Raza__3213E83FDBDB844A");
+
+            entity.ToTable("Raza");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Nombre)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("nombre");
+        });
+
         modelBuilder.Entity<Rol>(entity =>
         {
             entity.HasKey(e => e.IdRol).HasName("PK__Rol__3C872F768FF23456");
@@ -208,6 +240,14 @@ public partial class GestionlabContext : DbContext
 
             entity.ToTable("Solicitud");
 
+            entity.HasIndex(e => e.CreatedBy, "IX_Solicitud_createdBy");
+
+            entity.HasIndex(e => e.IdCliente, "IX_Solicitud_idCliente");
+
+            entity.HasIndex(e => e.IdPaciente, "IX_Solicitud_idPaciente");
+
+            entity.HasIndex(e => e.IdTipoSolicitud, "IX_Solicitud_idTipoSolicitud");
+
             entity.Property(e => e.IdSolicitud).HasColumnName("idSolicitud");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
@@ -215,16 +255,37 @@ public partial class GestionlabContext : DbContext
                 .HasColumnName("createdAt");
             entity.Property(e => e.CreatedBy).HasColumnName("createdBy");
             entity.Property(e => e.Estado).HasColumnName("estado");
+            entity.Property(e => e.FechaRecoleccion)
+                .HasColumnType("datetime")
+                .HasColumnName("fechaRecoleccion");
+            entity.Property(e => e.HoraRecoleccion)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("horaRecoleccion");
             entity.Property(e => e.IdCliente).HasColumnName("idCliente");
             entity.Property(e => e.IdPaciente).HasColumnName("idPaciente");
             entity.Property(e => e.IdTipoSolicitud).HasColumnName("idTipoSolicitud");
+            entity.Property(e => e.IdVeterinario).HasColumnName("idVeterinario");
             entity.Property(e => e.Nombre)
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("nombre");
+            entity.Property(e => e.Obserevaciones)
+                .HasColumnType("text")
+                .HasColumnName("obserevaciones");
+            entity.Property(e => e.TamanoFragmento)
+                .HasMaxLength(150)
+                .IsUnicode(false)
+                .HasColumnName("tamanoFragmento");
+            entity.Property(e => e.TipoExamen).HasColumnName("tipoExamen");
+            entity.Property(e => e.TipoMuestra).HasColumnName("tipoMuestra");
             entity.Property(e => e.UpdatedAt)
                 .HasColumnType("datetime")
                 .HasColumnName("updatedAt");
+            entity.Property(e => e.UrlFotoMuestra)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("urlFotoMuestra");
 
             entity.HasOne(d => d.CreatedByNavigation).WithMany(p => p.Solicituds)
                 .HasForeignKey(d => d.CreatedBy)
@@ -245,6 +306,18 @@ public partial class GestionlabContext : DbContext
                 .HasForeignKey(d => d.IdTipoSolicitud)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Solicitud__idTip__5070F446");
+
+            entity.HasOne(d => d.IdVeterinarioNavigation).WithMany(p => p.Solicituds)
+                .HasForeignKey(d => d.IdVeterinario)
+                .HasConstraintName("FK__Solicitud__idVet__75A278F5");
+
+            entity.HasOne(d => d.TipoExamenNavigation).WithMany(p => p.Solicituds)
+                .HasForeignKey(d => d.TipoExamen)
+                .HasConstraintName("FK__Solicitud__tipoE__797309D9");
+
+            entity.HasOne(d => d.TipoMuestraNavigation).WithMany(p => p.Solicituds)
+                .HasForeignKey(d => d.TipoMuestra)
+                .HasConstraintName("FK__Solicitud__tipoM__787EE5A0");
         });
 
         modelBuilder.Entity<Sucursal>(entity =>
@@ -294,7 +367,7 @@ public partial class GestionlabContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("nombre");
-            entity.Property(e => e.tipoCampo)
+            entity.Property(e => e.TipoCampo1)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("tipoCampo");
@@ -330,6 +403,19 @@ public partial class GestionlabContext : DbContext
                 .HasColumnName("nombre");
         });
 
+        modelBuilder.Entity<TipoMuestra>(entity =>
+        {
+            entity.HasKey(e => e.IdTipoMuestra).HasName("PK__tipoMues__996B67DC3E8F26BA");
+
+            entity.ToTable("TipoMuestra");
+
+            entity.Property(e => e.IdTipoMuestra).HasColumnName("idTipoMuestra");
+            entity.Property(e => e.NombreTipo)
+                .HasMaxLength(200)
+                .IsUnicode(false)
+                .HasColumnName("nombreTipo");
+        });
+
         modelBuilder.Entity<TipoSolicitud>(entity =>
         {
             entity.HasKey(e => e.IdTipoSolicitud).HasName("PK__TipoSoli__4B3A35EAEA0989F6");
@@ -348,6 +434,7 @@ public partial class GestionlabContext : DbContext
             entity.Property(e => e.UpdatedAt)
                 .HasColumnType("datetime")
                 .HasColumnName("updatedAt");
+            entity.Property(e => e.Valor).HasColumnName("valor");
         });
 
         modelBuilder.Entity<Usuario>(entity =>
@@ -355,6 +442,12 @@ public partial class GestionlabContext : DbContext
             entity.HasKey(e => e.IdUsuario).HasName("PK__Usuario__645723A6D5A59267");
 
             entity.ToTable("Usuario");
+
+            entity.HasIndex(e => e.IdRol, "IX_Usuario_idRol");
+
+            entity.HasIndex(e => e.IdSucursal, "IX_Usuario_idSucursal");
+
+            entity.HasIndex(e => e.IdTipoIdentificacion, "IX_Usuario_idTipoIdentificacion");
 
             entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
             entity.Property(e => e.Contrasena)
@@ -399,6 +492,35 @@ public partial class GestionlabContext : DbContext
                 .HasForeignKey(d => d.IdTipoIdentificacion)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__Usuario__idTipoI__403A8C7D");
+        });
+
+        modelBuilder.Entity<Veterinario>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Vetarina__3213E83F0367846E");
+
+            entity.ToTable("Veterinario");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("createdAt");
+            entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
+            entity.Property(e => e.Nombre)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("nombre");
+            entity.Property(e => e.TarjetaProfesional)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("tarjetaProfesional");
+            entity.Property(e => e.UpdatedAt)
+                .HasColumnType("datetime")
+                .HasColumnName("updatedAt");
+
+            entity.HasOne(d => d.IdUsuarioNavigation).WithMany(p => p.Veterinarios)
+                .HasForeignKey(d => d.IdUsuario)
+                .HasConstraintName("FK__Vetarinar__idUsu__71D1E811");
         });
 
         OnModelCreatingPartial(modelBuilder);

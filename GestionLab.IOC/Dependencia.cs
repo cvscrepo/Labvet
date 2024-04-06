@@ -1,7 +1,12 @@
-﻿using GestionLab.DAL.DBContext;
+﻿using GestionLab.BLL;
+using GestionLab.BLL.Contrato;
+using GestionLab.DAL.DBContext;
+using GestionLab.DAL.Repositorios.Contratos;
+using GestionLab.Utility;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SistemaComercial.DAL.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +22,9 @@ namespace GestionLab.IOC
             service.AddDbContext<GestionlabContext>(opt =>
                 opt.UseSqlServer(configuration.GetConnectionString("cadenaSQL"))
             );
+            service.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            service.AddAutoMapper(typeof(AutoMapperProfile));
+            service.AddScoped<IUsuarioService, UsuarioService>();
         }
     }
 }

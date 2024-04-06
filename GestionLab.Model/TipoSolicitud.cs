@@ -13,5 +13,7 @@ public partial class TipoSolicitud
 
     public DateTime? UpdatedAt { get; set; }
 
+    public int? Valor { get; set; }
+
     public virtual ICollection<Solicitud> Solicituds { get; } = new List<Solicitud>();
 }

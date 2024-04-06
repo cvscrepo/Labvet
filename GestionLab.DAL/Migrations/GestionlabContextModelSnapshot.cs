@@ -374,17 +374,17 @@ namespace GestionLab.DAL.Migrations
                         .HasColumnType("varchar(255)")
                         .HasColumnName("nombre");
 
-                    b.Property<string>("TipoCampo1")
-                        .HasMaxLength(100)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("tipoCampo");
-
                     b.Property<string>("ValorReferencia")
                         .HasMaxLength(100)
                         .IsUnicode(false)
                         .HasColumnType("varchar(100)")
                         .HasColumnName("valorReferencia");
+
+                    b.Property<string>("tipoCampo")
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)")
+                        .HasColumnName("tipoCampo");
 
                     b.HasKey("IdTipoCampo")
                         .HasName("PK__TipoCamp__C984E5BAD6EA4A04");

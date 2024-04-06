@@ -10,4 +10,6 @@ public partial class TipoFormato
     public string? Nombre { get; set; }
 
     public virtual ICollection<Formato> Formatos { get; } = new List<Formato>();
+
+    public virtual ICollection<Solicitud> Solicituds { get; } = new List<Solicitud>();
 }

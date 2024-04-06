@@ -55,7 +55,7 @@ namespace GestionLab.BLL
             try
             {
 
-                bool tipoCampoEditado = await _tipoCampoRepository.Editar(_mapper.Map<TipoCampo>(tipoCampoS));
+                bool tipoCampoEditado = await _tipoCampoRepository.Editar(_mapper.Map<TipoCampo>(tipoCampo));
                 if (!tipoCampoEditado) throw new TaskCanceledException("Tipo Campo no encontrado");
                 return tipoCampoEditado;
 
