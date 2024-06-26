@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "71U9BTQmsd4jjxXuW8y62XJNH2smWjsZhJUz9T8NYqemENEaI4qVx52NS/DdEeuIQe3P/dkwBis8pV5B4MNxng==",
+  "dgSpecHash": "cI1OWcZg0ppUbiLlM2v/V2ruqKGiq9KgZ1YbsyMOgLTEY6drRthfJzNGfKsD3+xFg/9RzfMPE00SsD+jgr7Qhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.BLL\\GestionLab.BLL.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.1\\microsoft.aspnetcore.authentication.jwtbearer.7.0.1.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

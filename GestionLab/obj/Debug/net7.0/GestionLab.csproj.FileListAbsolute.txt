@@ -214,3 +214,4 @@ C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab\bin\Debug\net7.0\Mono.T
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

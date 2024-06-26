@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestionLab.Utility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a179ef74816fe2a85c15c32770ea12b6a45232f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7db08b7a6ce66ab9f48cde5a2b268222fa1da535")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestionLab.Utility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestionLab.Utility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

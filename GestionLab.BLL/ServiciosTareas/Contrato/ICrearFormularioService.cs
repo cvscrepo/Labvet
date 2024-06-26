@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionLab.DTO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace GestionLab.BLL.ServiciosTareas.Contrato
 {
     public interface ICrearFormularioService
     {
-       
+        public Task<FormatoDTO> CrearFormulario(FormatoDTO formato);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,8 +17,6 @@ namespace GestionLab.DTO
 
         public int IdTipoIdentificacion { get; set; }
 
-        public string TipoIdentificacion { get; set; } // editado
-
         public int NumeroIdentificacion { get; set; }
 
         public string Nombre { get; set; } = null!;
@@ -28,7 +27,7 @@ namespace GestionLab.DTO
 
         public string? UrlFoto { get; set; }
 
-        public bool Estado { get; set; }
+        public int? Estado { get; set; }
 
         public DateTime? CreatedAt { get; set; }
 

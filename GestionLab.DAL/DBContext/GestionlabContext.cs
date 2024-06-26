@@ -32,6 +32,8 @@ public partial class GestionlabContext : DbContext
 
     public virtual DbSet<Sucursal> Sucursals { get; set; }
 
+    public virtual DbSet<Servicios> Servicios { get; set; }
+
     public virtual DbSet<TipoCampo> TipoCampos { get; set; }
 
     public virtual DbSet<TipoFormato> TipoFormatos { get; set; }
@@ -354,6 +356,27 @@ public partial class GestionlabContext : DbContext
             entity.Property(e => e.UptadedAt)
                 .HasColumnType("datetime")
                 .HasColumnName("uptadedAt");
+        });
+
+        modelBuilder.Entity<Servicios>(entity =>
+        {
+            entity.HasKey(e => e.IdServicios).HasName("PK__Servicio__185EC2A0A25A0A7E");
+
+            entity.ToTable("Servicios");
+
+            entity.Property(e => e.IdServicios).HasColumnName("idServicios");
+            entity.Property(e => e.NombreServicio)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .IsRequired(true)
+                .HasColumnName("nombreServicio");
+            entity.Property(e => e.Descripcion)
+                .HasColumnType("text")
+                .HasColumnName("descripcion")
+                .IsRequired(true);
+            entity.Property(e => e.ImgReferenced)
+            .HasMaxLength(255)
+            .HasColumnName("imgReferenced");
         });
 
         modelBuilder.Entity<TipoCampo>(entity =>

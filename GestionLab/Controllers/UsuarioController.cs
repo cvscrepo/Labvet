@@ -2,12 +2,14 @@
 using GestionLab.DTO;
 using GestionLab.Model;
 using GestionLab.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestionLab.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {

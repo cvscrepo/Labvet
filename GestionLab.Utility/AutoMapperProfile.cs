@@ -46,6 +46,11 @@ namespace GestionLab.Utility
             CreateMap<Sucursal, SucursalDTO>().ReverseMap();
             #endregion
 
+            #region Servicios
+            CreateMap<Servicios, ServiciosDTO>().ReverseMap();
+            CreateMap<ServiciosDTO, Servicios> ().ReverseMap();
+            #endregion
+
             #region Tipo Campo
             CreateMap<TipoCampo, TipoCampoDTO>().ReverseMap();
             #endregion
@@ -63,11 +68,7 @@ namespace GestionLab.Utility
             #endregion
 
             #region Usuario
-            CreateMap<Usuario, UsuarioDTO>()
-                .ForMember(destino =>
-                    destino.TipoIdentificacion,
-                    opt => opt.MapFrom(origen => origen.IdTipoIdentificacionNavigation.Nombre)
-                );
+            CreateMap<UsuarioDTO, Usuario>().ReverseMap();
             #endregion
         }
     }

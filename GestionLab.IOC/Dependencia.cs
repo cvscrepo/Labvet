@@ -1,5 +1,7 @@
 ﻿using GestionLab.BLL;
 using GestionLab.BLL.Contrato;
+using GestionLab.BLL.ServiciosTareas;
+using GestionLab.BLL.ServiciosTareas.Contrato;
 using GestionLab.DAL.DBContext;
 using GestionLab.DAL.Repositorios.Contratos;
 using GestionLab.Utility;
@@ -25,6 +27,8 @@ namespace GestionLab.IOC
             service.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             service.AddAutoMapper(typeof(AutoMapperProfile));
             service.AddScoped<IUsuarioService, UsuarioService>();
+            service.AddScoped<IServiciosService, ServiciosService>();
+            service.AddScoped<ILoginService, LoginService>();
         }
     }
 }
