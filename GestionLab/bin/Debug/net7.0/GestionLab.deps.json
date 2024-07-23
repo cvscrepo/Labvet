@@ -8,11 +8,14 @@
     ".NETCoreApp,Version=v7.0": {
       "GestionLab/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "GestionLab.BLL": "1.0.0",
           "GestionLab.DTO": "1.0.0",
           "GestionLab.IOC": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.1",
           "Microsoft.AspNetCore.OpenApi": "7.0.13",
           "Microsoft.EntityFrameworkCore.Design": "7.0.1",
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.1",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -240,6 +243,11 @@
             "assemblyVersion": "7.0.1.0",
             "fileVersion": "7.0.122.55819"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/7.0.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "7.0.1"
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -883,6 +891,13 @@
       "sha512": "sha512-bO01yAzgXNoJNbtHfrRFOpJxcP8R0bP5yrCTVULOXVR9MQVbpehqt94R19vwE+Bw+9P3xHZdotBTDucwR4rxLg==",
       "path": "microsoft.entityframeworkcore.sqlserver/7.0.1",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.7.0.1.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Tools/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WVxitSIa/U8jQ1GGtEcDHXlVu3VeISq8Nmg6Wa3iXrx9/Tzh/dOgsDd4kpJvC1RFnFTxJ2qGd+9YqwV18mUyeg==",
+      "path": "microsoft.entityframeworkcore.tools/7.0.1",
+      "hashPath": "microsoft.entityframeworkcore.tools.7.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",

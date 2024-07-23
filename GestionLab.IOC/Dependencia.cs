@@ -29,6 +29,7 @@ namespace GestionLab.IOC
             service.AddScoped<IUsuarioService, UsuarioService>();
             service.AddScoped<IServiciosService, ServiciosService>();
             service.AddScoped<ILoginService, LoginService>();
+            service.AddScoped<IRolService, RolService>();
         }
     }
 }

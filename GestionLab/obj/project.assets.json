@@ -310,6 +310,18 @@
           }
         }
       },
+      "Microsoft.EntityFrameworkCore.Tools/7.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "7.0.1"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -1732,6 +1744,31 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.7.0.1.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/7.0.1": {
+      "sha512": "WVxitSIa/U8jQ1GGtEcDHXlVu3VeISq8Nmg6Wa3iXrx9/Tzh/dOgsDd4kpJvC1RFnFTxJ2qGd+9YqwV18mUyeg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/7.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/_._",
+        "microsoft.entityframeworkcore.tools.7.0.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-arm64/ef.exe",
+        "tools/net461/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -4082,33 +4119,31 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "GestionLab.BLL >= 1.0.0",
       "GestionLab.DTO >= 1.0.0",
       "GestionLab.IOC >= 1.0.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.1",
       "Microsoft.AspNetCore.OpenApi >= 7.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.1",
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.1",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\juand\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab\\GestionLab.csproj",
+      "projectUniqueName": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab\\GestionLab.csproj",
       "projectName": "GestionLab",
-      "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab\\GestionLab.csproj",
-      "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab\\obj\\",
+      "projectPath": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab\\GestionLab.csproj",
+      "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\JuanDavidDiazOrozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4116,21 +4151,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.BLL\\GestionLab.BLL.csproj": {
-              "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.BLL\\GestionLab.BLL.csproj"
+            "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.BLL\\GestionLab.BLL.csproj": {
+              "projectPath": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.BLL\\GestionLab.BLL.csproj"
             },
-            "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.DTO\\GestionLab.DTO.csproj": {
-              "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.DTO\\GestionLab.DTO.csproj"
+            "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.DTO\\GestionLab.DTO.csproj": {
+              "projectPath": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.DTO\\GestionLab.DTO.csproj"
             },
-            "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.IOC\\GestionLab.IOC.csproj": {
-              "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.IOC\\GestionLab.IOC.csproj"
+            "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.IOC\\GestionLab.IOC.csproj": {
+              "projectPath": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.IOC\\GestionLab.IOC.csproj"
             }
           }
         }
@@ -4145,11 +4179,25 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[7.0.1, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.13, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[7.0.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
@@ -4171,24 +4219,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.17, 7.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.17, 7.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.17, 7.0.17]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.17, 7.0.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -4197,7 +4227,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

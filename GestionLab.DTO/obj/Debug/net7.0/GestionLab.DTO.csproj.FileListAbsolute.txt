@@ -32,3 +32,14 @@ C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab.DTO\obj\Debug\net7.0\Ge
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab.DTO\obj\Debug\net7.0\refint\GestionLab.DTO.dll
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.pdb
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab.DTO\obj\Debug\net7.0\ref\GestionLab.DTO.dll
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\bin\Debug\net7.0\GestionLab.DTO.deps.json
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\bin\Debug\net7.0\GestionLab.DTO.dll
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\bin\Debug\net7.0\GestionLab.DTO.pdb
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.AssemblyInfoInputs.cache
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.AssemblyInfo.cs
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.csproj.CoreCompileInputs.cache
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.dll
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\obj\Debug\net7.0\refint\GestionLab.DTO.dll
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\obj\Debug\net7.0\GestionLab.DTO.pdb
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.DTO\obj\Debug\net7.0\ref\GestionLab.DTO.dll

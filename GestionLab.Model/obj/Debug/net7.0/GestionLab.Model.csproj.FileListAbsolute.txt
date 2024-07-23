@@ -27,3 +27,17 @@ C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab.Model\obj\Debug\net7.0\
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.pdb
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.genruntimeconfig.cache
 C:\Users\JuanDavidDiazOrozco\Documents\Labvet\GestionLab.Model\obj\Debug\net7.0\ref\GestionLab.Model.dll
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\bin\Debug\net7.0\GestionLab.Model.deps.json
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\bin\Debug\net7.0\GestionLab.Model.runtimeconfig.json
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\bin\Debug\net7.0\GestionLab.Model.dll
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\bin\Debug\net7.0\GestionLab.Model.pdb
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.csproj.AssemblyReference.cache
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.AssemblyInfoInputs.cache
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.AssemblyInfo.cs
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.csproj.CoreCompileInputs.cache
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.dll
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\refint\GestionLab.Model.dll
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.pdb
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\GestionLab.Model.genruntimeconfig.cache
+D:\Documents\Proyectos\Labvet\Labvet\GestionLab.Model\obj\Debug\net7.0\ref\GestionLab.Model.dll

@@ -15,6 +15,13 @@ namespace GestionLab.BLL
     {
         private readonly IGenericRepository<Rol> _rolRepository;
         private readonly IMapper _mapper;
+
+        public RolService(IGenericRepository<Rol> rolRepository, IMapper mapper)
+        {
+            _rolRepository = rolRepository;
+            _mapper = mapper;
+        }
+
         public async Task<List<RolDTO>> ListarRoles()
         {
             try
@@ -33,8 +40,7 @@ namespace GestionLab.BLL
             {
                 Rol rolCreado = await _rolRepository.Crear(_mapper.Map<Rol>(rol));
                 if (rolCreado == null) throw new TaskCanceledException("Paciente no pudo ser creado");
-                IQueryable<Rol> buscarRol = await _rolRepository.Consultar(c => c.IdRol == rolCreado.IdRol);
-                return _mapper.Map<RolDTO>(buscarRol);
+                return _mapper.Map<RolDTO>(rolCreado);
             }
             catch
             {

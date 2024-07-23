@@ -70,9 +70,9 @@ namespace GestionLab.DAL.Migrations
                     b.HasKey("IdCampo")
                         .HasName("PK__CampoFor__5245D63C288E6FA6");
 
-                    b.HasIndex("IdFormato");
+                    b.HasIndex(new[] { "IdFormato" }, "IX_CampoFormato_idFormato");
 
-                    b.HasIndex("IdTipoCampo");
+                    b.HasIndex(new[] { "IdTipoCampo" }, "IX_CampoFormato_idTipoCampo");
 
                     b.ToTable("CampoFormato", (string)null);
                 });
@@ -166,11 +166,11 @@ namespace GestionLab.DAL.Migrations
                     b.HasKey("IdFormato")
                         .HasName("PK__Formato__60E489D17C035DC2");
 
-                    b.HasIndex("IdSolicitud");
+                    b.HasIndex(new[] { "IdSolicitud" }, "IX_Formato_idSolicitud");
 
-                    b.HasIndex("IdTipoFormato");
+                    b.HasIndex(new[] { "IdTipoFormato" }, "IX_Formato_idTipoFormato");
 
-                    b.HasIndex("IdUsuario");
+                    b.HasIndex(new[] { "IdUsuario" }, "IX_Formato_idUsuario");
 
                     b.ToTable("Formato", (string)null);
                 });
@@ -213,9 +213,30 @@ namespace GestionLab.DAL.Migrations
                     b.HasKey("IdPaciente")
                         .HasName("PK__Paciente__F48A08F2EF56DCA9");
 
-                    b.HasIndex("IdCliente");
+                    b.HasIndex(new[] { "IdCliente" }, "IX_Paciente_idCliente");
 
                     b.ToTable("Paciente", (string)null);
+                });
+
+            modelBuilder.Entity("GestionLab.Model.Raza", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)")
+                        .HasColumnName("nombre");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Raza__3213E83FDBDB844A");
+
+                    b.ToTable("Raza", (string)null);
                 });
 
             modelBuilder.Entity("GestionLab.Model.Rol", b =>
@@ -237,6 +258,38 @@ namespace GestionLab.DAL.Migrations
                         .HasName("PK__Rol__3C872F768FF23456");
 
                     b.ToTable("Rol", (string)null);
+                });
+
+            modelBuilder.Entity("GestionLab.Model.Servicios", b =>
+                {
+                    b.Property<int>("IdServicios")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("idServicios");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdServicios"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("descripcion");
+
+                    b.Property<string>("ImgReferenced")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)")
+                        .HasColumnName("imgReferenced");
+
+                    b.Property<string>("NombreServicio")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(255)")
+                        .HasColumnName("nombreServicio");
+
+                    b.HasKey("IdServicios")
+                        .HasName("PK__Servicio__185EC2A0A25A0A7E");
+
+                    b.ToTable("Servicios", (string)null);
                 });
 
             modelBuilder.Entity("GestionLab.Model.Solicitud", b =>
@@ -262,6 +315,16 @@ namespace GestionLab.DAL.Migrations
                         .HasColumnType("bit")
                         .HasColumnName("estado");
 
+                    b.Property<DateTime?>("FechaRecoleccion")
+                        .HasColumnType("datetime")
+                        .HasColumnName("fechaRecoleccion");
+
+                    b.Property<string>("HoraRecoleccion")
+                        .HasMaxLength(50)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(50)")
+                        .HasColumnName("horaRecoleccion");
+
                     b.Property<int>("IdCliente")
                         .HasColumnType("int")
                         .HasColumnName("idCliente");
@@ -274,6 +337,10 @@ namespace GestionLab.DAL.Migrations
                         .HasColumnType("int")
                         .HasColumnName("idTipoSolicitud");
 
+                    b.Property<int?>("IdVeterinario")
+                        .HasColumnType("int")
+                        .HasColumnName("idVeterinario");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(255)
@@ -281,20 +348,50 @@ namespace GestionLab.DAL.Migrations
                         .HasColumnType("varchar(255)")
                         .HasColumnName("nombre");
 
+                    b.Property<string>("Obserevaciones")
+                        .HasColumnType("text")
+                        .HasColumnName("obserevaciones");
+
+                    b.Property<string>("TamanoFragmento")
+                        .HasMaxLength(150)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(150)")
+                        .HasColumnName("tamanoFragmento");
+
+                    b.Property<int?>("TipoExamen")
+                        .HasColumnType("int")
+                        .HasColumnName("tipoExamen");
+
+                    b.Property<int?>("TipoMuestra")
+                        .HasColumnType("int")
+                        .HasColumnName("tipoMuestra");
+
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime")
                         .HasColumnName("updatedAt");
 
+                    b.Property<string>("UrlFotoMuestra")
+                        .HasMaxLength(255)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(255)")
+                        .HasColumnName("urlFotoMuestra");
+
                     b.HasKey("IdSolicitud")
                         .HasName("PK__Solicitu__D801DDB8D29C92F6");
 
-                    b.HasIndex("CreatedBy");
+                    b.HasIndex("IdVeterinario");
 
-                    b.HasIndex("IdCliente");
+                    b.HasIndex("TipoExamen");
 
-                    b.HasIndex("IdPaciente");
+                    b.HasIndex("TipoMuestra");
 
-                    b.HasIndex("IdTipoSolicitud");
+                    b.HasIndex(new[] { "CreatedBy" }, "IX_Solicitud_createdBy");
+
+                    b.HasIndex(new[] { "IdCliente" }, "IX_Solicitud_idCliente");
+
+                    b.HasIndex(new[] { "IdPaciente" }, "IX_Solicitud_idPaciente");
+
+                    b.HasIndex(new[] { "IdTipoSolicitud" }, "IX_Solicitud_idTipoSolicitud");
 
                     b.ToTable("Solicitud", (string)null);
                 });
@@ -374,17 +471,17 @@ namespace GestionLab.DAL.Migrations
                         .HasColumnType("varchar(255)")
                         .HasColumnName("nombre");
 
+                    b.Property<string>("TipoCampo1")
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)")
+                        .HasColumnName("tipoCampo");
+
                     b.Property<string>("ValorReferencia")
                         .HasMaxLength(100)
                         .IsUnicode(false)
                         .HasColumnType("varchar(100)")
                         .HasColumnName("valorReferencia");
-
-                    b.Property<string>("tipoCampo")
-                        .HasMaxLength(100)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("tipoCampo");
 
                     b.HasKey("IdTipoCampo")
                         .HasName("PK__TipoCamp__C984E5BAD6EA4A04");
@@ -435,6 +532,27 @@ namespace GestionLab.DAL.Migrations
                     b.ToTable("TipoIdentificacion", (string)null);
                 });
 
+            modelBuilder.Entity("GestionLab.Model.TipoMuestra", b =>
+                {
+                    b.Property<int>("IdTipoMuestra")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("idTipoMuestra");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTipoMuestra"));
+
+                    b.Property<string>("NombreTipo")
+                        .HasMaxLength(200)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(200)")
+                        .HasColumnName("nombreTipo");
+
+                    b.HasKey("IdTipoMuestra")
+                        .HasName("PK__tipoMues__996B67DC3E8F26BA");
+
+                    b.ToTable("TipoMuestra", (string)null);
+                });
+
             modelBuilder.Entity("GestionLab.Model.TipoSolicitud", b =>
                 {
                     b.Property<int>("IdTipoSolicitud")
@@ -459,6 +577,10 @@ namespace GestionLab.DAL.Migrations
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime")
                         .HasColumnName("updatedAt");
+
+                    b.Property<int?>("Valor")
+                        .HasColumnType("int")
+                        .HasColumnName("valor");
 
                     b.HasKey("IdTipoSolicitud")
                         .HasName("PK__TipoSoli__4B3A35EAEA0989F6");
@@ -535,13 +657,56 @@ namespace GestionLab.DAL.Migrations
                     b.HasKey("IdUsuario")
                         .HasName("PK__Usuario__645723A6D5A59267");
 
-                    b.HasIndex("IdRol");
+                    b.HasIndex(new[] { "IdRol" }, "IX_Usuario_idRol");
 
-                    b.HasIndex("IdSucursal");
+                    b.HasIndex(new[] { "IdSucursal" }, "IX_Usuario_idSucursal");
 
-                    b.HasIndex("IdTipoIdentificacion");
+                    b.HasIndex(new[] { "IdTipoIdentificacion" }, "IX_Usuario_idTipoIdentificacion");
 
                     b.ToTable("Usuario", (string)null);
+                });
+
+            modelBuilder.Entity("GestionLab.Model.Veterinario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime")
+                        .HasColumnName("createdAt")
+                        .HasDefaultValueSql("(getdate())");
+
+                    b.Property<int?>("IdUsuario")
+                        .HasColumnType("int")
+                        .HasColumnName("idUsuario");
+
+                    b.Property<string>("Nombre")
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)")
+                        .HasColumnName("nombre");
+
+                    b.Property<string>("TarjetaProfesional")
+                        .HasMaxLength(100)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(100)")
+                        .HasColumnName("tarjetaProfesional");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime")
+                        .HasColumnName("updatedAt");
+
+                    b.HasKey("Id")
+                        .HasName("PK__Vetarina__3213E83F0367846E");
+
+                    b.HasIndex("IdUsuario");
+
+                    b.ToTable("Veterinario", (string)null);
                 });
 
             modelBuilder.Entity("GestionLab.Model.CampoFormato", b =>
@@ -621,6 +786,21 @@ namespace GestionLab.DAL.Migrations
                         .IsRequired()
                         .HasConstraintName("FK__Solicitud__idTip__5070F446");
 
+                    b.HasOne("GestionLab.Model.Veterinario", "IdVeterinarioNavigation")
+                        .WithMany("Solicituds")
+                        .HasForeignKey("IdVeterinario")
+                        .HasConstraintName("FK__Solicitud__idVet__75A278F5");
+
+                    b.HasOne("GestionLab.Model.TipoFormato", "TipoExamenNavigation")
+                        .WithMany("Solicituds")
+                        .HasForeignKey("TipoExamen")
+                        .HasConstraintName("FK__Solicitud__tipoE__797309D9");
+
+                    b.HasOne("GestionLab.Model.TipoMuestra", "TipoMuestraNavigation")
+                        .WithMany("Solicituds")
+                        .HasForeignKey("TipoMuestra")
+                        .HasConstraintName("FK__Solicitud__tipoM__787EE5A0");
+
                     b.Navigation("CreatedByNavigation");
 
                     b.Navigation("IdClienteNavigation");
@@ -628,6 +808,12 @@ namespace GestionLab.DAL.Migrations
                     b.Navigation("IdPacienteNavigation");
 
                     b.Navigation("IdTipoSolicitudNavigation");
+
+                    b.Navigation("IdVeterinarioNavigation");
+
+                    b.Navigation("TipoExamenNavigation");
+
+                    b.Navigation("TipoMuestraNavigation");
                 });
 
             modelBuilder.Entity("GestionLab.Model.Usuario", b =>
@@ -654,6 +840,16 @@ namespace GestionLab.DAL.Migrations
                     b.Navigation("IdSucursalNavigation");
 
                     b.Navigation("IdTipoIdentificacionNavigation");
+                });
+
+            modelBuilder.Entity("GestionLab.Model.Veterinario", b =>
+                {
+                    b.HasOne("GestionLab.Model.Usuario", "IdUsuarioNavigation")
+                        .WithMany("Veterinarios")
+                        .HasForeignKey("IdUsuario")
+                        .HasConstraintName("FK__Vetarinar__idUsu__71D1E811");
+
+                    b.Navigation("IdUsuarioNavigation");
                 });
 
             modelBuilder.Entity("GestionLab.Model.Cliente", b =>
@@ -696,11 +892,18 @@ namespace GestionLab.DAL.Migrations
             modelBuilder.Entity("GestionLab.Model.TipoFormato", b =>
                 {
                     b.Navigation("Formatos");
+
+                    b.Navigation("Solicituds");
                 });
 
             modelBuilder.Entity("GestionLab.Model.TipoIdentificacion", b =>
                 {
                     b.Navigation("Usuarios");
+                });
+
+            modelBuilder.Entity("GestionLab.Model.TipoMuestra", b =>
+                {
+                    b.Navigation("Solicituds");
                 });
 
             modelBuilder.Entity("GestionLab.Model.TipoSolicitud", b =>
@@ -712,6 +915,13 @@ namespace GestionLab.DAL.Migrations
                 {
                     b.Navigation("Formatos");
 
+                    b.Navigation("Solicituds");
+
+                    b.Navigation("Veterinarios");
+                });
+
+            modelBuilder.Entity("GestionLab.Model.Veterinario", b =>
+                {
                     b.Navigation("Solicituds");
                 });
 #pragma warning restore 612, 618

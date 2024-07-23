@@ -14,8 +14,7 @@ namespace GestionLab.Utility
         public AutoMapperProfile() 
         {
             #region Rol
-            CreateMap<Rol, RolDTO>()
-                .ReverseMap();
+            CreateMap<Rol, RolDTO>().ReverseMap();
             #endregion
 
             #region Campo Formato

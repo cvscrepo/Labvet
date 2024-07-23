@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj": {}
+    "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj": {
+    "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj",
+        "projectUniqueName": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj",
         "projectName": "GestionLab.Model",
-        "projectPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj",
-        "packagesPath": "C:\\Users\\JuanDavidDiazOrozco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JuanDavidDiazOrozco\\Documents\\Labvet\\GestionLab.Model\\obj\\",
+        "projectPath": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.Model\\GestionLab.Model.csproj",
+        "packagesPath": "C:\\Users\\juand\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Proyectos\\Labvet\\Labvet\\GestionLab.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\JuanDavidDiazOrozco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\juand\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,26 +68,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
