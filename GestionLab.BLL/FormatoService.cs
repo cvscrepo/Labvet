@@ -66,13 +66,13 @@ namespace GestionLab.BLL
             }
         }
 
-        public async Task<bool> EditarFormato(FormatoDTO formato)
+        public async Task<FormatoDTO> EditarFormato(FormatoDTO formato)
         {
             try
             {
                 bool formatoEditado = await _formatoRepository.Editar(_mapper.Map<Formato>(formato));
                 if (!formatoEditado) throw new TaskCanceledException("Formato noencontrado");
-                return formatoEditado;
+                return formato;
             }
             catch
             {

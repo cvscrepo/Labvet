@@ -44,5 +44,34 @@ namespace GestionLab.BLL.ServiciosTareas
                 }
             }
         }
+
+
+        public async Task<FormatoDTO> EditarFormato(FormatoDTO formato)
+        {
+            using(var transaction = _dbContext.Database.BeginTransaction())
+            {
+                try
+                {
+                    FormatoDTO formatoEditado = await _formatoService.EditarFormato(formato);
+                    foreach (CampoFormatoDTO campo in formato.CampoFormatos)
+                    {
+                        if (campo.IdCampo == 0)
+                        {
+                            campo.IdFormato = formatoEditado.IdFormato;
+                            CampoFormatoDTO campoCreado = await _campoFormatoService.CrearCampo(campo);
+                        }
+                        else
+                        {
+                            CampoFormatoDTO campoEditado = await _campoFormatoService.EditarCampo(campo);
+                        }
+                    }
+                    return formatoEditado;
+                }
+                catch
+                {
+                    throw;
+                }
+            }
+        }
     }
 }

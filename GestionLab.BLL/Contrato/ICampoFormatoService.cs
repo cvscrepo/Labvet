@@ -13,7 +13,7 @@ namespace GestionLab.BLL.Contrato
 
         public Task<CampoFormatoDTO> CrearCampo(CampoFormatoDTO campo);
 
-        public Task<bool> EditarCampo(CampoFormatoDTO campo);
+        public Task<CampoFormatoDTO> EditarCampo(CampoFormatoDTO campo);
 
         public Task<bool> ElimarCampo(int id);
     }

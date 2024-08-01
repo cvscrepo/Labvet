@@ -51,13 +51,13 @@ namespace GestionLab.BLL
             }
         }
 
-        public async Task<bool> EditarCampo(CampoFormatoDTO campo)
+        public async Task<CampoFormatoDTO> EditarCampo(CampoFormatoDTO campo)
         {
             try
             {
                 bool campoEditado = await _campoFormatoRepository.Editar(_mapper.Map<CampoFormato>(campo));
                 if (!campoEditado) throw new TaskCanceledException("Cliente noencontrado");
-                return campoEditado;
+                return campo;
             }
             catch
             {

@@ -15,7 +15,7 @@ namespace GestionLab.BLL.Contrato
 
         public Task<FormatoDTO> CrearFormato(FormatoDTO formato);
 
-        public Task<bool> EditarFormato(FormatoDTO formato);
+        public Task<FormatoDTO> EditarFormato(FormatoDTO formato);
 
         public Task<bool> ElimarFormato(int idFormato);
     }
